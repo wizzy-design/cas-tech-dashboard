@@ -12,7 +12,7 @@ import Project from "./Project";
 
 const Projects = () => {
   return (
-    <section className="mx-4 my-6 shadow-md rounded-lg px-6 py-6">
+    <section className="shadow-md rounded-lg px-6 py-6">
       {/* Nav */}
       <div className="flex justify-between">
         <TitleSubTitle
@@ -27,6 +27,16 @@ const Projects = () => {
 
       {/* List/Grid Projects */}
       <div className="py-6">
+        {/* Table heading */}
+        <div className="hidden lg:grid lg:grid-cols-5 lg:grid-row-6 lg:py-4">
+          <span className="col-span-2 text-xs font-bold text-[#A0AEC0]">
+            COMPANIES
+          </span>
+          <span className="text-xs font-bold text-[#A0AEC0]">MEMBERS</span>
+          <span className="text-xs font-bold text-[#A0AEC0]">BUDGET</span>
+          <span className="text-xs font-bold text-[#A0AEC0]">COMPLETION</span>
+        </div>
+
         <Project
           title="Chakra Soft UI Version"
           budget="$14,000"
