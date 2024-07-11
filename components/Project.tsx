@@ -26,11 +26,11 @@ const Project: React.FC<ProjectProps> = ({
       </h2>
 
       {/* Budget */}
-      <p className="text-[#2D3748] font-bold flex justify-end lg:justify-start lg:col-start-4">{budget}</p>
+      <p className="text-[#2D3748] font-bold flex justify-end lg:justify-start lg:col-start-4 text-[14px]">{budget}</p>
 
       {/* Progress */}
       <div className="col-span-2 lg:col-span-1">
-        <p className="text-[#4FD1C5] font-bold">{completion}%</p>
+        <p className="text-[#4FD1C5] font-bold text-[14px]">{completion}%</p>
 
         {/* Progress bar */}
         <div className="bg-[#E2E8F0] relative w-[125px] h-[4px] rounded-[3px]">
