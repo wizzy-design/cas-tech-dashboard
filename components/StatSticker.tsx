@@ -24,7 +24,7 @@ const StatSticker: React.FC<StatStickerProps> = ({
   subClassName,
 }) => {
   return (
-    <section className="bg-white flex justify-between px-3 py-2 w-[12rem] rounded-[15px] shadow-sm lg:w-[15rem]">
+    <section className="bg-white flex justify-between px-3 py-2 w-[10rem] rounded-[15px] shadow-sm lg:w-[15rem]">
       <TitleSubTitle
         title={title}
         sub={sub}
