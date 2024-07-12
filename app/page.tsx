@@ -4,6 +4,7 @@ import NavBar from "@/components/NavBar";
 import NavOptions from "@/components/NavOptions";
 import Blogs from "@/components/Blogs";
 import Sales from "@/components/Sales";
+import ActiveUsers from "@/components/ActiveUsers";
 
 export default function Home() {
   return (
@@ -13,7 +14,8 @@ export default function Home() {
       {/* <Blogs /> */}
       {/* <Projects /> */}
       {/* <Orders /> */}
-      <Sales />
+      {/* <Sales /> */}
+      <ActiveUsers />
     </main>
   );
 }
