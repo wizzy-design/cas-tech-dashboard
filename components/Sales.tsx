@@ -4,7 +4,7 @@ import TitleSubTitle from "./TitleSubTitle";
 
 const Sales = () => {
   return (
-    <section className="bg-white md:w-1/2 rounded-[15px] p-4">
+    <section className="bg-white lg:w-2/3 rounded-[15px] p-4 lg:h-[324px] lg:ml-4 shadow-sm flex flex-col justify-between">
       <TitleSubTitle
         title="Sales overview"
         sub=" in 2021"
@@ -12,8 +12,8 @@ const Sales = () => {
       />
 
       {/* Chart Image */}
-      <div className="py-5">
-        <Image src={chart} alt="Chart image"/>
+      <div className="">
+        <Image src={chart} alt="Chart image" className=""/>
       </div>
     </section>
   );

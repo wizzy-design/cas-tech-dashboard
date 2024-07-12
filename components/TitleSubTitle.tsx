@@ -26,7 +26,7 @@ const TitleSubTitle: React.FC<TitleSubTitle> = ({
     <div className={twMerge(`flex flex-col gap-y-1`, className)}>
       {/* Title */}
       <div className={twMerge(`flex items-center`, subClassName)}>
-        <h2 className="text-[#2D3748] font-bold text-lg">{title}</h2>
+        <h2 className="text-[#2D3748] font-bold text-[14px]">{title}</h2>
         <span className="text-[#48BB78] text-xs font-bold">{green}</span>
         <span className="text-[#E53E3E] text-xs font-bold">{red}</span>
       </div>

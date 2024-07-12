@@ -9,7 +9,7 @@ import Image from "next/image";
 
 const ActiveUsers = () => {
   return (
-    <section className="bg-white p-4 pb-6 rounded-[15px] shadow-sm">
+    <section className="bg-white p-4 pb-6 rounded-[15px] shadow-sm lg:w-[30rem] lg:h-full">
       {/* Graph */}
       <Image src={graph} alt="Graph" className="mb-4" />
 
@@ -26,7 +26,7 @@ const ActiveUsers = () => {
           { title: "Sales", icon: cart, progress: 40, num: "2,400$" },
           { title: "Items", icon: spanner, progress: 60, num: "320" },
         ].map((item) => (
-          <div key={item.title}>
+          <div key={item.title} className="w-[30%]">
             {/* Subtitle and Icon */}
             <div className="flex items-center gap-2">
               <div className="bg-[#4FD1C5] p-2 rounded-[6px]">
@@ -37,14 +37,14 @@ const ActiveUsers = () => {
 
             {/* Number and Progress bar */}
             <div>
-              <h2 className="text-[#2D3748] font-bold text-lg py-1">
+              <h2 className="text-[#2D3748] font-bold text-[14px] py-1">
                 {item.num}
               </h2>
 
               {/* Progress bar */}
-              <div className="bg-[#E2E8F0] relative w-[125px] h-[4px] rounded-[3px]">
+              <div className="bg-[#E2E8F0] relative w-[60px] h-[4px] rounded-[3px]">
                 <span
-                  className={`w-[${item.progress}%] block h-[4px] bg-[#4FD1C5] rounded-[3px]`}
+                  className={`w-[40%] block h-[4px] bg-[#4FD1C5] rounded-[3px]`}
                 ></span>
               </div>
             </div>

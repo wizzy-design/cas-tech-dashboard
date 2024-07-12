@@ -9,7 +9,7 @@ import card from "../public/icons/orders/card.svg";
 
 const Orders = () => {
   return (
-    <section className="shadow-sm rounded-lg px-6 py-6">
+    <section className="shadow-sm rounded-lg px-6 py-6 bg-white">
       <TitleSubTitle
         title="Orders overview"
         sub=" this month"

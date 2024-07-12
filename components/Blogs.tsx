@@ -7,9 +7,9 @@ import chakra from "../public/icons/purity/chakra.svg";
 
 const Blogs = () => {
   return (
-    <section className="md:flex md:gap-x-4 items-center">
+    <section className="flex flex-col md:gap-x-4 items-center md:grid md:grid-cols-2 md:grid-rows-1 lg:flex lg:flex-row">
       {/* Purity UI Dashboard */}
-      <div className="bg-white shadow-sm p-4 lg:flex lg:justify-between rounded-[15px] lg:w-[31rem] min-h-[224px]">
+      <div className="bg-white shadow-sm p-4 lg:flex lg:justify-between rounded-[15px] md:place-items-start md:justify-items-start lg:w-[31rem] min-h-[224px] col-span-1 row-span-2">
         <div className="lg:flex lg:flex-col lg:justify-between">
           <div>
             <TitleSubTitle
@@ -17,7 +17,7 @@ const Blogs = () => {
               sub="Built by developers"
               className="flex-col-reverse"
             />
-            <p className="text-[#A0AEC0] text-sm pt-1 lg:w-[80%]">
+            <p className="text-[#A0AEC0] text-[12px] pt-1 md:w-[60%] lg:w-[80%]">
               From colors, cards, typography to complex elements, you will find
               the full documentation.
             </p>
@@ -41,11 +41,11 @@ const Blogs = () => {
       </div>
 
       {/* Work With Rockets */}
-      <div className="bg-contain md:bg-cover bg-no-repeat bg-center bg-[url('../public/icons/purity/workers.svg')] px-10 py-16 bg-transparent flex flex-col h-full justify-between md:w-[20rem]  lg:w-[32rem] text-white">
+      <div className="bg-contain md:bg-cover bg-no-repeat bg-center bg-[url('../public/icons/purity/workers.svg')] px-10 py-16 bg-transparent flex flex-col h-full justify-between md:w-[22rem]  lg:w-[32rem] text-white">
         <div className="flex flex-col gap-y-1">
           {/* Title */}
           <div className="flex items-center">
-            <h2 className="text-white font-bold text-lg">
+            <h2 className="text-white font-bold text-[14px]">
               Work with the Rockets
             </h2>
           </div>

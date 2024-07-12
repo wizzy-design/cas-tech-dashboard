@@ -12,7 +12,7 @@ import Project from "./Project";
 
 const Projects = () => {
   return (
-    <section className="shadow-sm rounded-lg px-6 py-6">
+    <section className="shadow-sm rounded-lg px-6 py-6 bg-white">
       {/* Nav */}
       <div className="flex justify-between">
         <TitleSubTitle

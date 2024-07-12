@@ -30,7 +30,7 @@ const NavOptionsCard: React.FC<NavOptionsCardProps> = ({
       <p
         className={`${
           first ? "text-[#2D3748]" : ""
-        } font-bold text-[#A0AEC0] text-sm`}
+        } font-bold text-[#A0AEC0] text-[12px]`}
       >
         {title}
       </p>

@@ -35,7 +35,9 @@ const NavOptions: React.FC<NavOptionsProps> = ({ className }) => {
         <NavOptionsCard title="Billing" icon={card} />
         <NavOptionsCard title="RTL" icon={spanner} />
 
-        <h2 className="text-[#2D3748] font-bold text-sm px-3">ACCOUNT PAGES</h2>
+        <h2 className="text-[#2D3748] font-bold text-[12px] px-3">
+          ACCOUNT PAGES
+        </h2>
         <NavOptionsCard title="Profile" icon={profile} />
         <NavOptionsCard title="Sign In" icon={document} />
         <NavOptionsCard title="Sign Up" icon={rocket} />
@@ -50,11 +52,11 @@ const NavOptions: React.FC<NavOptionsProps> = ({ className }) => {
 
         <div className="text-white mb-3">
           <h2 className="font-bold">Need help?</h2>
-          <p className="text-sm">Please check our docs</p>
+          <p className="text-[12px]">Please check our docs</p>
         </div>
 
         <div className="flex justify-center">
-          <button className="w-full bg-white font-bold text-[#2D3748] text-sm p-2 rounded-[15px]">
+          <button className="w-full bg-white font-bold text-[#2D3748] text-[12px] p-2 rounded-[15px]">
             DOCUMENTATION
           </button>
         </div>
