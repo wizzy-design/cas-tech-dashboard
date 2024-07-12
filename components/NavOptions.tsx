@@ -8,14 +8,13 @@ import profile from "../public/icons/dash-nav/profile.svg";
 import question from "../public/icons/dash-nav/question.svg";
 import linear from "../public/icons/dash-nav/linear.svg";
 import rocket from "../public/icons/dash-nav/rocket.svg";
-import docs from "../public/icons/dash-nav/documentation.svg";
 
 import Image from "next/image";
 import NavOptionsCards from "@/components/NavOptionsCards";
 
 const NavOptions = () => {
   return (
-    <section className="w-[15rem]">
+    <section className="w-[15rem] hidden lg:block">
       {/* Heading */}
       <h2 className="flex items-center gap-2 font-bold text-[#2D3748] px-3">
         <Image src={logo} alt="Logo" /> PURITY UI DASHBOARD
@@ -24,24 +23,35 @@ const NavOptions = () => {
       {/* Linear gradient line */}
       <Image src={linear} alt="Line" className="mt-6 mb-3" />
 
-      <NavOptionsCards title="Dashboard" icon={home} first={true} />
-      <NavOptionsCards title="Tables" icon={chart} />
-      <NavOptionsCards title="Billing" icon={card} />
-      <NavOptionsCards title="RTL" icon={spanner} />
+      <div>
+        <NavOptionsCards title="Dashboard" icon={home} first={true} />
+        <NavOptionsCards title="Tables" icon={chart} />
+        <NavOptionsCards title="Billing" icon={card} />
+        <NavOptionsCards title="RTL" icon={spanner} />
 
-      <h2 className="text-[#2D3748] font-bold text-sm px-3">ACCOUNT PAGES</h2>
-      <NavOptionsCards title="Profile" icon={profile} />
-      <NavOptionsCards title="Sign In" icon={document} />
-      <NavOptionsCards title="Sign Up" icon={rocket} />
+        <h2 className="text-[#2D3748] font-bold text-sm px-3">ACCOUNT PAGES</h2>
+        <NavOptionsCards title="Profile" icon={profile} />
+        <NavOptionsCards title="Sign In" icon={document} />
+        <NavOptionsCards title="Sign Up" icon={rocket} />
+      </div>
 
-      {/* Dashboard */}
-      <div className="bg-[url('../public/icons/dash-nav/documentation.svg')] bg-cover">
-        <div>
-          <h2>Need help?</h2>
-          <p>Please check our docs</p>
+      {/* Documentation Card*/}
+      <div className="bg-[url('../public/icons/dash-nav/documentation.svg')] bg-cover p-4 h-[12rem] rounded-[15px]">
+        {/* Icon */}
+        <div className="bg-white rounded-[12px] p-2 w-10 mb-6">
+          <Image src={question} alt="Question Mark" />
         </div>
 
-        <button>DOCUMENTATION</button>
+        <div className="text-white mb-3">
+          <h2 className="font-bold">Need help?</h2>
+          <p className="text-sm">Please check our docs</p>
+        </div>
+
+        <div className="flex justify-center">
+          <button className="w-full bg-white font-bold text-[#2D3748] text-sm p-2 rounded-[15px]">
+            DOCUMENTATION
+          </button>
+        </div>
       </div>
     </section>
   );
