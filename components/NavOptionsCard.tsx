@@ -1,12 +1,12 @@
 import Image from "next/image";
 
-interface NavOptionsCardsProps {
+interface NavOptionsCardProps {
   icon: any;
   title: string;
   first?: boolean;
 }
 
-const NavOptionsCards: React.FC<NavOptionsCardsProps> = ({ icon, title, first }) => {
+const NavOptionsCard: React.FC<NavOptionsCardProps> = ({ icon, title, first }) => {
   return (
     <div className={`${first ? "bg-white shadow-md rounded-[15px] py-3" : " "} px-3 flex items-center gap-x-4 my-5`}>
       {/* Icon */}
@@ -20,4 +20,4 @@ const NavOptionsCards: React.FC<NavOptionsCardsProps> = ({ icon, title, first })
   );
 };
 
-export default NavOptionsCards;
+export default NavOptionsCard;

@@ -10,11 +10,17 @@ import linear from "../public/icons/dash-nav/linear.svg";
 import rocket from "../public/icons/dash-nav/rocket.svg";
 
 import Image from "next/image";
-import NavOptionsCards from "@/components/NavOptionsCards";
+import NavOptionsCard from "@/components/NavOptionsCard";
+import { twMerge } from "tailwind-merge";
+import React from "react";
 
-const NavOptions = () => {
+interface NavOptionsProps {
+  className?: string;
+}
+
+const NavOptions: React.FC<NavOptionsProps> = ({ className }) => {
   return (
-    <section className="w-[15rem] hidden lg:block">
+    <section className={twMerge(`w-[15rem]  lg:block`, className)}>
       {/* Heading */}
       <h2 className="flex items-center gap-2 font-bold text-[#2D3748] px-3">
         <Image src={logo} alt="Logo" /> PURITY UI DASHBOARD
@@ -24,15 +30,15 @@ const NavOptions = () => {
       <Image src={linear} alt="Line" className="mt-6 mb-3" />
 
       <div>
-        <NavOptionsCards title="Dashboard" icon={home} first={true} />
-        <NavOptionsCards title="Tables" icon={chart} />
-        <NavOptionsCards title="Billing" icon={card} />
-        <NavOptionsCards title="RTL" icon={spanner} />
+        <NavOptionsCard title="Dashboard" icon={home} first={true} />
+        <NavOptionsCard title="Tables" icon={chart} />
+        <NavOptionsCard title="Billing" icon={card} />
+        <NavOptionsCard title="RTL" icon={spanner} />
 
         <h2 className="text-[#2D3748] font-bold text-sm px-3">ACCOUNT PAGES</h2>
-        <NavOptionsCards title="Profile" icon={profile} />
-        <NavOptionsCards title="Sign In" icon={document} />
-        <NavOptionsCards title="Sign Up" icon={rocket} />
+        <NavOptionsCard title="Profile" icon={profile} />
+        <NavOptionsCard title="Sign In" icon={document} />
+        <NavOptionsCard title="Sign Up" icon={rocket} />
       </div>
 
       {/* Documentation Card*/}

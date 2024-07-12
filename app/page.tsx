@@ -6,8 +6,8 @@ import NavOptions from "@/components/NavOptions";
 export default function Home() {
   return (
     <main className="bg-[#F8F9FA] px-5 py-6">
-      <NavOptions />
-      {/* <NavBar /> */}
+      {/* <NavOptions /> */}
+      <NavBar />
       {/* <Projects /> */}
       {/* <Orders /> */}
     </main>
