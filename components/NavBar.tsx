@@ -1,13 +1,20 @@
 "use client";
 
-import { useState } from "react";
 import menu from "../public/icons/nav/menu.svg";
 import profile from "../public/icons/nav/person.svg";
 import setting from "../public/icons/nav/setting.svg";
 import bell from "../public/icons/nav/bell.svg";
 import search from "../public/icons/nav/search.svg";
-import { IoMdClose } from "react-icons/io";
+import wallet from "../public/icons/nav/wallet.svg";
+import globe from "../public/icons/nav/globe.svg";
+import cart from "../public/icons/nav/cart.svg";
+import text from "../public/icons/nav/text.svg";
+
 import NavOptions from "./NavOptions";
+import StatSticker from "./StatSticker";
+
+import { useState } from "react";
+import { IoMdClose } from "react-icons/io";
 import Image from "next/image";
 
 const NavBar = () => {
@@ -51,7 +58,7 @@ const NavBar = () => {
                 src={profile}
                 alt="Profile"
                 className="w-[1.5rem] lg:w-[1rem]"
-              />{" "}
+              />
               <span className="font-bold text-[#718096]">Sign In</span>
             </button>
             <button>
@@ -78,7 +85,43 @@ const NavBar = () => {
         />
       </div>
 
-      {/* Sliding NavOptions */}
+      {/* Stat stickers */}
+      <div className="grid grid-cols-2 md:grid-cols-3 gap-3 justify-items-center lg:justify-start lg:flex md:items-center lg:gap-y-0 lg:gap-x-4 mb-2 mt-6">
+        <StatSticker
+          title="$53,000"
+          sub="Today's Money"
+          green="+55%"
+          icon={wallet}
+          titleSubClassName="flex-col-reverse"
+          subClassName="gap-1"
+        />
+        <StatSticker
+          title="2,300"
+          sub="Today's Users"
+          green="+5%"
+          icon={globe}
+          titleSubClassName="flex-col-reverse"
+          subClassName="gap-1"
+        />
+        <StatSticker
+          title="+3,052"
+          sub="New Clients"
+          red="-14%"
+          icon={text}
+          titleSubClassName="flex-col-reverse"
+          subClassName="gap-1"
+        />
+        <StatSticker
+          title="$173,000"
+          sub="Total Sales"
+          green="+8%"
+          icon={cart}
+          titleSubClassName="flex-col-reverse"
+          subClassName="gap-1"
+        />
+      </div>
+
+      {/* Sliding NavOptions for Mobile */}
       <div
         className={`fixed top-0 left-0 z-50 h-full transform bg-[#F8F9FA] w-[20rem] px-4 py-4 mt-2 ${
           isNavOpen ? "translate-x-0" : "-translate-x-full"

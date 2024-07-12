@@ -10,7 +10,7 @@ import card from "../public/icons/orders/card.svg"
 const Orders = () => {
   return (
     <section className="shadow-md rounded-lg px-6 py-6">
-      <TitleSubTitle title="Orders overview" sub=" this month" green="+30%  " />
+      <TitleSubTitle title="Orders overview" sub=" this month" greensub="+30%  " />
 
       {/* Orders */}
       <div className="pt-8 space-y-2">
